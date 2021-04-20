@@ -38,5 +38,5 @@ def time_quicksort(n_data, n_threads):
 
 if __name__ == '__main__':
     n_data = 50000
-    n_threads = 4
-    time_quicksort(n_data, n_threads)
+    for n_threads in [1, 2, 4, 8, 16, 32]:
+        time_quicksort(n_data, n_threads)

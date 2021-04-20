@@ -39,5 +39,5 @@ def time_histogram(n_data, n_threads):
 
 if __name__ == '__main__':
     n_data = 4000
-    n_threads = 4
-    time_histogram(n_data, n_threads)
+    for n_threads in [1, 2, 4, 8, 16, 32]:
+        time_histogram(n_data, n_threads)

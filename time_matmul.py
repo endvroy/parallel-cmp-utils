@@ -42,5 +42,5 @@ if __name__ == '__main__':
     n_rows_a = 200
     n_cols_a = 400
     n_cols_b = 300
-    n_threads = 4
-    time_matmul(n_rows_a, n_cols_a, n_cols_b, n_threads)
+    for n_threads in [1, 2, 4, 8, 16, 32]:
+        time_matmul(n_rows_a, n_cols_a, n_cols_b, n_threads)
